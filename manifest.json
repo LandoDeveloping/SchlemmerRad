@@ -1,0 +1,44 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.15/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.15",
+  "version": "1.0.0",
+  "id": "21e9922e-ab7b-4e25-b1b4-df1f98e2c73a", 
+  "packageName": "com.example.simpleapp",
+  "developer": {
+    "name": "Your Name or Company",
+    "websiteUrl": "https://www.example.com",
+    "privacyUrl": "https://www.example.com/privacy",
+    "termsOfUseUrl": "https://www.example.com/terms"
+  },
+  "name": {
+    "short": "Simple App",
+    "full": "Simple Microsoft Teams App"
+  },
+  "description": {
+    "short": "A simple Teams app for demonstration.",
+    "full": "This app is designed to demonstrate a simple manifest structure for Microsoft Teams."
+  },
+  "icons": {
+    "outline": "outline-icon.png",
+    "color": "color-icon.png" 
+  },
+  "accentColor": "#FFFFFF",
+  "staticTabs": [
+    {
+      "entityId": "simpleTab",
+      "name": "Simple Tab",
+      "contentUrl": "https://your-web-url.com",
+      "websiteUrl": "https://your-web-url.com",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "your-web-url.com"
+  ]
+}
