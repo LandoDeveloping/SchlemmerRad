@@ -1,5 +1,5 @@
 :where(.ui-wheel-of-fortune) {
-  --_items: 12;
+  --_items: 4;
   all: unset;
   aspect-ratio: 1 / 1;
   container-type: inline-size;
@@ -44,7 +44,7 @@
       background: hsl(calc(360deg / var(--_items) * calc(var(--_idx))), 100%, 75%);
       clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
       display: grid;
-      font-size: 5cqi;
+      font-size: 7cqi;
       grid-area: 1 / -1;
       padding-left: 1ch;
       rotate: calc(360deg / var(--_items) * calc(var(--_idx) - 1));
@@ -56,14 +56,6 @@
       &:nth-of-type(2) { --_idx: 2; }
       &:nth-of-type(3) { --_idx: 3; }
       &:nth-of-type(4) { --_idx: 4; }
-      &:nth-of-type(5) { --_idx: 5; }
-      &:nth-of-type(6) { --_idx: 6; }
-      &:nth-of-type(7) { --_idx: 7; }
-      &:nth-of-type(8) { --_idx: 8; }
-      &:nth-of-type(9) { --_idx: 9; }
-      &:nth-of-type(10) { --_idx: 10; }
-      &:nth-of-type(11) { --_idx: 11; }
-      &:nth-of-type(12) { --_idx: 12; }
     }
   }
 }
